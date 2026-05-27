@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サイトのタイトル</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
 
@@ -15,7 +22,7 @@
 
         <nav>
             <ul>
-                <li><a href="#concept">CONSEPT</a></li>
+                <li><a href="#concept">CONCEPT</a></li>
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#feature">FEATURE</a></li>
                 <li><a href="#access">ACCESS</a></li>
@@ -28,33 +35,33 @@
 
         <section class="top">
             
-            <div class="sentence">
-                <h1>一杯のコーヒで、日常に余白を。</h1>
-                <p>街の喧騒から少し離れた場所にある、小さなコーヒースタンド。自家焙煎のコーヒーと、静かな時間をご用意してお待ちしております。</p>
-                <a>メニューを見る</a>
+            <div class="top_sentence">
+                <h1>一杯のコーヒで、<br>日常に余白を。</h1>
+                <p class="top_text">街の喧騒から少し離れた場所にある、<br>小さなコーヒースタンド。<br>自家焙煎のコーヒーと、静かな時間を<br>ご用意してお待ちしております。</p>
+                <a href="#menu">メニューを見る</a>
             </div>
 
             <img src="top.avif">
 
         </section>
 
-        <section class="consept">
+        <section class="concept">
 
-            <div class="consept_heading heading">
+            <div class="concept_heading heading">
 
-                <h2>CONSEPT</h2>
+                <h2>CONCEPT</h2>
                 <p>コンセプト</p>
 
             </div>
 
-            <div class="consept_container">
-                <img src="consept.avif">
+            <div class="concept_container">
+                <img src="concept.avif">
 
-                <div class="consept_sentence">
+                <div class="concept_sentence">
 
                     <h3>町の小さな止まり木</h3>
-                    <p>忙しい毎日の中で、ふと立ち止まれる場所を作りたい。そんな想いから「MORI COFFEE」は生まれました。</p>
-                    <p>選び抜かれたスペシャルティコーヒーの香りと、木の温もりを感じるミニマルな空間で、あなただけの「余白」の時間をお過ごしください。</p>
+                    <p class="concept_sentence1">忙しい毎日の中で、ふと立ち止まれる場所を作りたい。<br>そんな想いから「MORI COFFEE」は生まれました。</p>
+                    <p class="concept_sentence2">選び抜かれたスペシャルティコーヒーの香りと、<br>木の温もりを感じるミニマルな空間で、<br>あなただけの「余白」の時間をお過ごしください。</p>
 
                 </div>
 
@@ -64,48 +71,67 @@
 
         <section class="menu">
 
-            <div class="menu_heading heading">
+            <div class="menu_content">
 
-                <h2>MENU</h2>
-                <p>メニュー</p>
-
-            </div>
-
-            <div class="menu_container">
-
-                <div class="menu_sentence">
-
-                    <h4>Hand Drip Coffee</h4>
-                    <p>ハンドドリップコーヒー</p>
-                    <p>￥600</p>
-                    <p>産地ごとの個性を引き出した、こだわりの一杯です。</p>
+                <div class="menu_heading heading">
+                    
+                    <h2>MENU</h2>
+                    <p>メニュー</p>
 
                 </div>
 
-                <div class="menu_sentence">
+                <div class="menu_container">
 
-                    <h4>Cafe Latte</h4>
-                    <p>カフェラテ</p>
-                    <p>￥650</p>
-                    <p>エスプレッソと濃厚なミルクの、優しい味わい。</p>
+                    <div class="menu_sentence">
+                        <div class="menu_image">
+                            <img src="menu1.png">
+                        </div>
+                        <div class="menu_text">
+                            <h4>Hand Drip Coffee</h4>
+                            <p class="menu_text_title">ハンドドリップコーヒー</p>
+                            <p class="menu_text_money">￥600</p>
+                            <p class="menu_text_description">産地ごとの個性を引き出した、こだわりの一杯です。</p>   
+                        </div>
+                    </div>
 
-                </div>
+                    <div class="menu_sentence">
+                        <div class="menu_image">
+                            <img src="menu2.png">
+                        </div>
+                        <div class="menu_text">
+                            <h4>Cafe Latte</h4>
+                            <p class="menu_text_title">カフェラテ</p>
+                            <p class="menu_text_money">￥650</p>
+                            <p class="menu_text_description">エスプレッソと濃厚なミルクの、優しい味わい。</p>
+                        </div>
 
-                <div class="menu_sentence">
+                    </div>
+                    
+                    <div class="menu_sentence">
+                        <div class="menu_image">
+                            <img src="menu3.png">
+                        </div>
+                        <div class="menu_text">
+                            <h4>Seasonal Cake</h4>
+                            <p class="menu_text_title">季節のケーキ</p>
+                            <p class="menu_text_money">￥550</p>
+                            <p class="menu_text_description">コーヒーに合う、甘さ控えめの手作りケーキ。</p>
+                        </div>
 
-                    <h4>Seasonal Cake</h4>
-                    <p>季節のケーキ</p>
-                    <p>￥550</p>
-                    <p>コーヒーに合う、甘さ控えめの手作りケーキ。</p>
+                    </div>
 
-                </div>
+                    <div class="menu_sentence">
+                        <div class="menu_image">
+                            <img src="menu4.png">
+                        </div>
+                        <div class="menu_text">
+                            <h4>Morning Set</h4>
+                            <p class="menu_text_title">モーニングセット</p>
+                            <p class="menu_text_money">￥850</p>
+                            <p class="menu_text_description">厚切りトーストとサラダ、お好きなドリンクのセット。</p>
+                        </div>
 
-                <div class="menu_sentence">
-
-                    <h4>Morning Set</h4>
-                    <p>モーニングセット</p>
-                    <p>￥850</p>
-                    <p>厚切りトーストとサラダ、お好きなドリンクのセット。</p>
+                    </div>
 
                 </div>
 
@@ -125,68 +151,113 @@
             <div class="feature_container">
 
                 <div class="feature_sentence">
-
+                    <div class="feature_image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    </div>
                     <h3>静かな空間</h3>
                     <p>読書や考え事に最適な、落ち着いたBGMと座席配置。お一人でも気兼ねなくお過ごしいただけます。</p>
 
                 </div>
 
                 <div class="feature_sentence">
-
+                    <div class="feature_image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-coffee-icon lucide-coffee"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg>
+                    </div>
                     <h3>こだわりの豆</h3>
                     <p>世界中から厳選されたスペシャルティコーヒー豆を使用。店内で丁寧に焙煎し、新鮮な状態でお届けします。</p>
 
                 </div>
 
                 <div class="feature_sentence">
-
+                    <div class="feature_image">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
                     <h3>駅から徒歩5分</h3>
                     <p>街角にひっそりと佇む、通いやすいロケーション。お仕事帰りや休日のお散歩の途中にも立ち寄りやすい場所です。</p>
 
                 </div>
-
             </div>
        
         </section>
 
         <section class="access">
-
             <div class="access_heading heading">
-
                 <h2>ACCESS</h2>
-                <p>アクセス</p>
+                <p class="section-subtitle">アクセス</p>
+            </div>
+            <div class="access-container">
+
+                <div class="map-area">
+                    <iframe
+                        class="google-map"
+                        src="https://www.google.com/maps?q=東京都千代田区丸の内1-9-1&output=embed"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+
+                    <div class="map-card">
+                        <p class="map-text">※ダミー住所です。実際の店舗情報とは異なります。</p>
+                    </div>
+                </div>
+
+                <div class="shop-info">
+                    <h3>店舗情報</h3>
+
+                    <dl>
+                        <div class="info-row">
+                            <dt>営業時間</dt>
+                            <dd>09:00 - 19:00</dd>
+                        </div>
+
+                        <div class="info-row">
+                            <dt>定休日</dt>
+                            <dd>水曜日</dd>
+                        </div>
+
+                        <div class="info-row">
+                            <dt>住所</dt>
+                            <dd>
+                                〒000-0000<br>
+                                東京都森珈琲町1-2-3
+                            </dd>
+                        </div>
+
+                        <div class="info-row">
+                            <dt>最寄り駅</dt>
+                            <dd>JR森駅 南口より 徒歩5分</dd>
+                        </div>
+                    </dl>
+
+                </div>
 
             </div>
 
-            <div class="access_container">
+        </section>
 
-                <div class="access_sentence">
-
-                    <h3>住所</h3>
-                    <p>東京都渋谷区神南1-19-11</p>
-
-                </div>
-
-                <div class="access_sentence">
-
-                    <h3>営業時間</h3>
-                    <p>平日 8:00 - 20:00 / 土日祝 9:00 - 21:00</p>
-
-                </div>
-
-                <div class="access_sentence">
-
-                    <h3>定休日</h3>
-                    <p>水曜日</p>
-
-                </div>
-
+        <section class="contact">
+            <div class="contact_heading heading">
+                <h2>CONTACT</h2>
+                <p class="section-subtitle">お問い合わせ</p>
             </div>
+            <p>お席のご予約や、豆の販売、貸切のご相談など、<br>お気軽にお問い合わせください。</p>
+            <a href="#">お問い合わせはこちら</a>
+        </section>
+
 
     </main>
 
     <footer>
 
+        <h2>MORI COFFEE</h2>
+        <ul>
+            <li><a href="#concept">CONSEPT</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#feature">FEATURE</a></li>
+            <li><a href="#access">ACCESS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+        <p>&copy; 2026 MORI COFFEE TEST SITE. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
