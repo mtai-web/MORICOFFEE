@@ -25,6 +25,26 @@ img {
     object-fit: cover;
 }
 
+header {
+    height: 80px;
+    padding: 0 32px;
+    background-color: oklab(0.999994 0.0000455677 0.0000200868 / 0.9);
+    display: flex;
+    align-items: center;
+}
+
+.header_logo a{
+    font-family: "Noto Serif JP", ui-serif, Georgia, serif;
+    font-size: 24px;
+    color: #332e2c;
+}
+
+.header nav ul li a{
+    color: oklab(0.999994 0.0000455677 0.0000200868 / 0.6);
+    font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+    font-size: 14px;
+}
+
 
 .top{
     display:flex;
@@ -195,7 +215,7 @@ h2{
 .menu_text_money{
     font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
     font-size: 16px;
-    color: #794f5b;
+    color: #795f4b;
     margin-bottom: 8px;
 }
 
@@ -320,9 +340,58 @@ h2{
 .contact{
     padding:128px 24px;
     background-color: #faf8f6;
-    margin:0 auto;
+    text-align: center;
 }
 
 .contact p{
-    morgin-bottom: 48px;
+    margin-bottom: 48px;
+    font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+    font-size: 16px;
+    color: oklab(0.305778 0.00592588 0.00555178 / 0.8);
+    font-weight: 500;
+}
+
+.contact a {
+    display: inline-block;
+    padding: 16px 48px;
+    color: #795f4b;
+    font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+    font-size: 14px;
+    border: 1px solid #584536;
+}
+
+footer{
+    padding: 80px 0 40px;
+    background-color: #262322;
+    text-align: center;
+    color: #fff;
+}
+
+footer h2{
+    font-family: "Noto Serif JP", ui-serif, Georgia, serif;
+    margin-bottom: 8px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+footer nav ul{
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+footer nav ul li a{
+    color: oklab(0.999994 0.0000455677 0.0000200868 / 0.6);
+    font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+    font-size: 12px;
+}
+
+footer p{
+    width: 50%;
+    margin: 0 auto;
+    font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+    padding-top: 40px;
+    font-size: 10px;
+    color: oklab(0.999994 0.0000455677 0.0000200868 / 0.3);
+    border-top: 1px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.3);
 }
