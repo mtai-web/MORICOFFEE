@@ -31,6 +31,13 @@ header {
     background-color: oklab(0.999994 0.0000455677 0.0000200868 / 0.9);
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .header_logo a{
@@ -39,8 +46,12 @@ header {
     color: #332e2c;
 }
 
-.header nav ul li a{
-    color: oklab(0.999994 0.0000455677 0.0000200868 / 0.6);
+header nav ul li{
+   margin-right: 32px;
+}
+
+header nav ul li a{
+    color: oklab(0.305778 0.00592588 0.00555178 / 0.8);
     font-family: "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
     font-size: 14px;
 }
@@ -394,4 +405,32 @@ footer p{
     font-size: 10px;
     color: oklab(0.999994 0.0000455677 0.0000200868 / 0.3);
     border-top: 1px solid oklab(0.999994 0.0000455677 0.0000200868 / 0.3);
+}
+
+
+
+.fade-item {
+  opacity: 0;
+  transition: 0.8s ease;
+}
+
+.from-bottom {
+  transform: translateY(40px);
+}
+
+.from-top {
+  transform: translateY(-40px);
+}
+
+.from-right {
+  transform: translateX(40px);
+}
+
+.from-left {
+  transform: translateX(-40px);
+}
+
+.fade-item.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }
