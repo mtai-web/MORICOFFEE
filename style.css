@@ -40,6 +40,15 @@ header {
     z-index: 1000;
 }
 
+
+.menu_btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #332e2c;
+}
+
 .header_logo a{
     font-family: "Noto Serif JP", ui-serif, Georgia, serif;
     font-size: 24px;
@@ -444,13 +453,6 @@ footer p{
 /* タブレット以下 */
 @media screen and (max-width: 900px) {
 
-    header {
-        height: auto;
-        padding: 20px 24px;
-        flex-direction: column;
-        gap: 16px;
-    }
-
     header nav ul {
         flex-wrap: wrap;
         justify-content: center;
@@ -461,10 +463,13 @@ footer p{
         margin-right: 0;
     }
 
+    header svg{
+        display:none;
+    }
+
     .top {
         height: auto;
         flex-direction: column-reverse;
-        padding: 100px 0 0;
     }
 
     .top_sentence {
@@ -545,16 +550,51 @@ footer p{
         padding: 16px 20px;
     }
 
+    /* ハンバーガーメニューのスタイル */
+
+    .menu_btn {
+        display: block;
+    }
+
+    header svg {
+        display: block;
+    }
+
+    header nav {
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 40px 24px;
+        transition: top 0.3s ease;
+        z-index: 999;
+    }
+
+    header nav.open {
+        top: 80px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+    }
+
+    /* ハンバーガーメニューのスタイル */
+
     .header_logo a {
         font-size: 22px;
     }
 
-    header nav ul {
-        gap: 12px 16px;
-    }
 
     header nav ul li a {
-        font-size: 12px;
+        font-size: 18px;
     }
     
     .top_sentence {
